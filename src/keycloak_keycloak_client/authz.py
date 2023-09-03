@@ -7,8 +7,8 @@ try:
 except ImportError:
     from urllib import urlencode  # noqa: F401
 
-from keycloak.exceptions import KeycloakClientError
-from keycloak.mixins import WellKnownMixin
+from python_keycloak_client.exceptions import KeycloakClientError
+from python_keycloak_client.mixins import WellKnownMixin
 
 PATH_ENTITLEMENT = "realms/{}/authz/entitlement/{}"
 
@@ -69,7 +69,7 @@ class KeycloakAuthz(WellKnownMixin, object):
         self, token, resource_scopes_tuples=None, submit_request=False, ticket=None
     ):
         """
-        Request permissions for user from keycloak server.
+        Request permissions for user from python_keycloak_client server.
 
         https://www.keycloak.org/docs/latest/authorization_services/index
         .html#_service_protection_permission_api_papi

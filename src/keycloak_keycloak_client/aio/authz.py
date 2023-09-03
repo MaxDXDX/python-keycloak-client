@@ -1,8 +1,8 @@
-from keycloak.aio.mixins import WellKnownMixin
-from keycloak.authz import PATH_WELL_KNOWN
-from keycloak.authz import KeycloakAuthz as SyncKeycloakAuthz
-from keycloak.authz import urlencode
-from keycloak.exceptions import KeycloakClientError
+from python_keycloak_client.aio.mixins import WellKnownMixin
+from python_keycloak_client.authz import PATH_WELL_KNOWN
+from python_keycloak_client.authz import KeycloakAuthz as SyncKeycloakAuthz
+from python_keycloak_client.authz import urlencode
+from python_keycloak_client.exceptions import KeycloakClientError
 
 __all__ = ("KeycloakAuthz",)
 
@@ -15,7 +15,7 @@ class KeycloakAuthz(WellKnownMixin, SyncKeycloakAuthz):
         self, token, resource_scopes_tuples=None, submit_request=False, ticket=None
     ):
         """
-        Request permissions for user from keycloak server.
+        Request permissions for user from python_keycloak_client server.
 
         https://www.keycloak.org/docs/latest/authorization_services/index.html#_service_protection_permission_api_papi
 

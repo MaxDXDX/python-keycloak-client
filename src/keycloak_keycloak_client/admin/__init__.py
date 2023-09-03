@@ -51,7 +51,7 @@ class KeycloakAdmin(object):
 
     @property
     def realms(self):
-        from keycloak.admin.realm import Realms
+        from python_keycloak_client.admin.realm import Realms
 
         return Realms(client=self)
 

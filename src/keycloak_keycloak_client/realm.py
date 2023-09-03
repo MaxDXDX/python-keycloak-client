@@ -1,9 +1,9 @@
-from keycloak.admin import KeycloakAdmin
-from keycloak.authz import KeycloakAuthz
-from keycloak.client import KeycloakClient
-from keycloak.openid_connect import KeycloakOpenidConnect
-from keycloak.uma import KeycloakUMA
-from keycloak.uma1 import KeycloakUMA1
+from python_keycloak_client.admin import KeycloakAdmin
+from python_keycloak_client.authz import KeycloakAuthz
+from python_keycloak_client.client import KeycloakClient
+from python_keycloak_client.openid_connect import KeycloakOpenidConnect
+from python_keycloak_client.uma import KeycloakUMA
+from python_keycloak_client.uma1 import KeycloakUMA1
 
 
 class KeycloakRealm(object):
@@ -82,7 +82,7 @@ class KeycloakRealm(object):
     @property
     def uma2(self):
         """
-        Starting from Keycloak 4 UMA2 is supported
+        Starting from python_keycloak_client 4 UMA2 is supported
         :rtype: keycloak.uma.KeycloakUMA
         """
         return KeycloakUMA(realm=self)

@@ -1,4 +1,4 @@
-from keycloak.admin import KeycloakAdminBase
+from python_keycloak_client.admin import KeycloakAdminBase
 
 __all__ = (
     "Client",
@@ -36,7 +36,7 @@ class Client(KeycloakAdminBase):
 
     @property
     def roles(self):
-        from keycloak.admin.clientroles import ClientRoles
+        from python_keycloak_client.admin.clientroles import ClientRoles
 
         return ClientRoles(
             client=self._client, client_id=self._id, realm_name=self._realm_name

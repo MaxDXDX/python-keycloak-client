@@ -1,6 +1,6 @@
 import json
 
-from keycloak.admin import KeycloakAdminBase
+from python_keycloak_client.admin import KeycloakAdminBase
 
 __all__ = ("UserRoleMappings", "UserRoleMappingsRealm")
 
