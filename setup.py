@@ -49,7 +49,7 @@ setup(
         "python-jose",
     ],
     tests_require=TESTS_REQUIRE,
-    url="https://github.com/Peter-Slump/python-keycloak-client",
+    url="https://github.com/MaxDXDX/python-keycloak-client",
     license="MIT",
     author="Peter Slump",
     author_email="peter@yarf.nl",
